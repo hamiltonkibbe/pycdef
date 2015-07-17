@@ -24,7 +24,7 @@
 
 
 def cdef(variable, var_name=None, precision='single', export_length=False,
-         length_name=None, static=False, pack=True, line_length=80):
+         length_name=None, static=True, pack=True, line_length=80):
     """ Generate c language definition for a constant array.
 
     Paramters
@@ -114,7 +114,7 @@ def cdef(variable, var_name=None, precision='single', export_length=False,
                     fmt = '%s' % zlfmtstr
                 else:
                     fmt = '%s' % fmtstr
-            valstr = fmt % values
+            valstr = fmt % value
             if (len(valstr) + len(line)) <= line_length:
                 line += valstr
             else:
