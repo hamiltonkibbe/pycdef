@@ -3,7 +3,7 @@
 Generate C/C++ constant definitions from python variables.
 
 ## Printing to console
-By default, pycdef will print the definition to the matlab console.
+By default, pycdef will print the definition to the console.
 Example:
 
 ```python
